@@ -1,0 +1,201 @@
+  @font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+  }
+  @font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* 폰트 설정  */
+
+*{
+    padding:0;
+    margin:0 auto;
+    text-align: center;
+  }
+  body
+  {
+    background-color: #432C7A;
+    background-image:  radial-gradient(#C060A1 2px, transparent 2px), radial-gradient(#C060A1 2px, #432C7A 2px);
+    background-size: 60px 60px;
+    background-position: 0 0,30px 30px;
+  }
+
+  label {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 1.3rem;
+  }
+
+  .header 
+  {
+    background-color: #C060A1;
+    height: 9rem;
+    margin-bottom: 2rem;
+    min-width: 66rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.253);
+  }
+
+ 
+  .contents_outside{
+  /* .contents_outside 클래스를 가진 요소를 그리드(grid) 형태로 배치하고, 요소들을 수직 및 수평 중앙에 위치시킵니다.
+  display:grid: 그리드 레이아웃을 사용하기 위한 속성입니다. 요소를 그리드 형태로 배치할 수 있습니다.
+  place-items:center: 그리드 컨테이너 내의 그리드 아이템들을 수직 및 수평 중앙에 위치시키기 위한 속성입니다. 
+  align-items와 justify-items 속성의 값으로 center를 지정한 것과 같은 효과를 줍니다. */
+    display:grid;
+    place-items:center;
+  }
+
+  .contents_container
+  {
+    background-color: #F0CAA3;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.253);
+    display: grid;
+    min-height: 32rem;
+    grid-template-columns: minmax(51rem, 60rem);
+    justify-content: center;
+  }
+    /* 버튼의 위치를 가운데로 설정 */
+  .submit_button
+  {
+    text-align:center;
+  }
+  /* a태그의 텍스트 데코레이션을 논을 설정해서 밑줄을 제거 */
+  a
+  {
+    text-decoration: none;
+  }
+ 
+  input
+  {
+  /* background-color 속성은 input 요소의 배경색을 나타내며, rgba() 함수를 사용하여 빨간색(212), 노란색(168), 파란색(127)과 투명도(0.5)를 설정합니다.
+  font-family 속성은 input 요소의 글꼴을 설정하며, 'NEXON Lv2 Gothic' 글꼴을 사용합니다.
+  outline 속성은 input 요소에 포커스를 줄 때 그 주변에 표시되는 외곽선을 설정합니다. 이 코드에서는 외곽선을 표시하지 않도록 설정되어 있습니다. */
+    background-color: rgba(212, 168, 127, 0.5);
+    font-family: 'NEXON Lv2 Gothic';
+    outline: 0;
+  }
+
+/* 버튼으로 텍스트창을 클릭하면 색상이 바뀜 */
+input:focus{
+  background-color: #EBC7E6;
+}
+  /* 퀘스트 제목 클래스 */
+ .list_title_1 
+ {
+    width: 25rem;
+    font-size:1rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+ }
+ /* 퀘스트 제목 아이디 우선순위 때문에 나눠서 지정해주게 됨*/
+#list_title{
+      height: 2.5rem;
+}
+  /* 퀘스트 내용 */
+ .list_detail_1 
+ {
+  width: 25rem;
+  height: 10rem;
+  font-size:1rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  vertical-align: top;
+ }
+
+ input[type=datetime-local]{
+  /* type 속성 값이 datetime-local인 input 요소의 스타일을 지정하는 코드입니다. 
+  해당 input 요소의 너비는 15.5rem이며, 높이는 1.2rem으로, 글꼴 크기는 1rem으로 설정되어 있습니다. 
+  배경 색상은 rgba(212, 168, 127, 0.5)로 지정되어 있고, 글꼴 패밀리는 'NEXON Lv2 Gothic'으로 지정되어 있습니다. 
+  그리고 글자 색상은 검정색, 외곽선은 없도록 설정되어 있으며, 테두리 반경은 5px이고, 안쪽 여백은 0.5rem으로 지정되어 있습니다. 
+  마지막으로 테두리는 2px의 굵기와 검은색으로 설정되어 있습니다. */
+  width: 15.5rem;
+  height:1.2rem;
+  font-size: 1rem;
+  background-color:rgba(212, 168, 127, 0.5);
+  font-family: 'NEXON Lv2 Gothic';
+  color: black;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border:2px solid black;
+}
+/* 달력 */
+::-webkit-calendar-picker-indicator{
+  background-color: #A084DC;
+  padding:5px;
+  cursor:pointer;
+  border-radius:3px;
+  border:2px solid black;
+}
+/* 시작 날짜 */
+.start_date_dir{
+  margin-right:5rem;
+}
+/* 중요 */
+.contents_imp{
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+/* 버튼을 다 아우르는 버튼 div */
+.submit_button 
+{
+  text-align:center;
+  margin-top: 2rem;
+  position: relative;
+}
+/* 삭제 버튼 */
+.delete_1 
+{
+  font-size: 1em;
+  width:85px;
+  height:40px;
+  box-shadow: 2px 2px 2px #3f3f3f;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  background-color: #EB455F;
+  position:absolute;
+  top:0;
+  left: 100px;
+}
+/* 취소 버튼 */
+.cancel_1 
+{
+  font-size: 1em;
+  width:85px;
+  height:40px;
+  box-shadow: 2px 2px 2px #3f3f3f;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family:'NeoDunggeunmoPro-Regular';
+  background-color: #C2C2C2;
+}
+/* 수정 버튼 */
+.edit_1 
+{
+  font-size: 1em;
+  width:85px;
+  height:40px;
+  box-shadow: 2px 2px 2px #3f3f3f;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  background-color: #FFDA56;
+}

@@ -1,0 +1,297 @@
+/* ****************** 전체 적용 CSS ****************** */
+@font-face{ /* 타이틀 */
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+@font-face { /* 내용 */
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { /* 강조용 1 */
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { /* 강조용 2 */
+    font-family: 'GeekbleMalang2WOFF2';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/GeekbleMalang2WOFF2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin:0;
+    padding:0;
+    font-family: 'NeoDunggeunmoPro-Regular';
+}
+body{
+    background-color: #432C7A;
+    background-image:  radial-gradient(#C060A1 2px, transparent 2px), radial-gradient(#C060A1 2px, #432C7A 2px);
+    /* 배경 이미지 : 원형 그라데이션을 통해 도트 무늬 배경이미지 지정 */
+    background-size: 60px 60px;
+    /* 너비, 높이 60px */
+    background-position: 0 0,30px 30px; 
+    /* background-position : 배경 이미지의 위치 설정 | 가로 : 0, 세로 : 30px */
+}
+header{
+    background-color: #C060A1;
+    height: 9rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.253);
+    min-width: 45rem;
+}
+form{
+    margin:0px;
+}
+.total_container {
+    display: grid;
+    grid-template-columns: 250px minmax(300px, 800px);
+    justify-content: center;
+}
+/* ****************** 프로필 영역 ****************** */
+.detail{
+    background-color: #f0caa3;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding:2em;
+    margin-top:2em;
+    min-height: 40rem;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.253);
+    border-right:none;
+}
+.prof_img{
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+}
+.grow_img{
+    width:80px;
+    height:80px;
+}
+.prof_name_level{
+    position: relative;
+    bottom:55px;
+    left:100px;
+    font-size:1.2em;
+}
+h3{
+    font-weight: 100;
+}
+.detail_total_calender{
+    margin-top:1em;
+}
+.detail_calender{
+    background: rgba(212, 168, 127, 0.5);
+    border:2px solid #000;
+    border-radius: 15px;
+    height:180px;
+    text-align: center;
+    margin-top:0.3em;
+}
+.day_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding:1em;
+}
+.calendar_title{
+    padding-top:1em;
+}
+.prof_hr{
+    position: relative;
+    bottom:20px;
+}
+.profile{
+    height:120px;
+}
+table{
+    text-align:center;
+}
+td{
+    text-align: center;
+}
+.detail_today{
+    margin-top: 1em;
+}
+.today_info{
+    background: rgba(212, 168, 127, 0.5);
+    border:2px solid #000;
+    border-radius: 15px;
+    height:auto;
+    min-height:180px;
+    text-align: center;
+    margin-top:0.3em;
+    padding-left:1.5em;
+    padding-bottom: 0.5em;
+}
+a{
+    text-decoration: none;
+    color:#000;
+    font-family: 'NEXON Lv2 Gothic';
+}
+li{
+    list-style: none;
+}
+.list_container{
+    margin-top:0.7em;
+    position: relative;
+    right:15px;
+}
+/* ****************** 상세 정보 영역 ****************** */
+.detail_info{
+    background-color: #f0caa3;
+    min-width: 20rem;
+    min-height: 40rem;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding:2em;
+    margin-top:2em;
+    margin-right: 5rem;
+    position: relative;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.253);
+}
+hr{
+    border:1px solid #000;
+}
+.imp_star{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.imp{
+    font-size: 35px;
+    margin-top:12px;
+    -webkit-text-stroke: 2px #2c271c;
+}
+.no_imp{
+    font-size: 35px;
+    margin-top:12px;
+}
+.detail_content{
+    border:2px solid #000;
+    border-radius: 15px;
+    height:35vh;
+    margin-top:1em;
+    background-color: rgba(239, 205, 207, 0.5);
+}
+input[type="checkbox"]{
+    -webkit-appearance: none; /* -webkit-appearance : 요소의 자체 구성요소 숨기기 / 사파리 & 크롬 적용 */
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    outline: none !important; /* !important : 나중에 적용하는 값이 적용되지 않도록 함 */
+    border: 1px solid #534e4e;
+    border-radius: 2px;
+    background: rgba(212, 170, 177, 0.3);
+    margin-top:2px;
+}
+input[type="checkbox"]::before {
+    content: "\2713"; /* 체크 표시(✓)의 CSS 번호 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden; /* 요소 밖으로 튀어나오는 컨텐츠를 숨김 */
+    /* transform / scale : 요소를 확대 또는 축소 */
+    transform: scale(0) translate(-50%, -50%); 
+    /* translate : 상대적으로 위치 지정, 이동 및 재배치 */
+    line-height: 1;
+}
+
+input[type="checkbox"]:hover {
+    border-color: rgba(170, 170, 170, 0.5);
+}
+
+input[type="checkbox"]:checked {
+    background-color: #c7aaaa;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+input[type="checkbox"]:checked::before {
+    border-radius: 2px;
+    transform: scale(1) translate(-50%, -50%) 
+    /* scale(1) : 해당 요소의 본래 치수를 유지하고 그 이상의 값 > 늘림 그 이하의 값 < 줄임*/
+}
+.todo_date{
+    font-size: 30px;
+}
+.todo_title{
+    font-size: 20px;
+    font-family: 'GeekbleMalang2WOFF2';
+}
+.todo_date_time{
+    font-size: 13px;
+    font-family: 'GeekbleMalang2WOFF2';
+}
+.info_title{
+    margin-top:30px;
+    position: relative;
+    top:62px;
+    left:3px;
+}
+.detail_info_title{
+    border:2px solid #000;
+    border-radius: 15px;
+    min-height:5vh;
+    height:auto;
+    margin:1em;
+    background-color: rgba(212, 170, 177, 0.3);
+    padding:0.5em;
+}
+textarea{
+    border:none;
+    outline: none;
+    height:auto;
+    resize: none;
+    background:transparent; /* 배경 투명하게 */
+    position:relative;
+    left:20px;
+    font-family: 'NEXON Lv2 Gothic';
+    width:90%;
+}
+/* ****************** 버튼 ****************** */
+.com_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+.com{
+    color:#fff;
+    width:65px;
+    height:30px;
+    background-color: #645cbb;
+    border-radius: 20px;
+    font-size: 1em;
+    border: 1px dotted #2e2a53;
+    cursor: pointer; /* 요소에 마우스 포인터를 올리면 클릭 포인터로 바뀜 */
+}
+.modify_btn{
+    width:85px;
+    height:40px;
+    background-color: #FFDA56;
+    box-shadow: 2px 2px 2px #3f3f3f;
+    border-radius: 5px;
+    position: absolute;
+    top:540px;
+    right:-3.5rem;
+    font-size: 1em;
+    cursor: pointer; 
+}
+.return_btn{
+    width:85px;
+    height:40px;
+    background-color: #c2c2c2;
+    box-shadow: 2px 2px 2px 1px #3f3f3f;
+    border-radius: 5px;
+    position: absolute;
+    top:600px;
+    right:-4.5rem;
+    font-size: 1em;
+    cursor: pointer;
+}
